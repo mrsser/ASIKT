@@ -176,7 +176,7 @@ if __name__ == '__main__':
     # Specific Parameter
     parser.add_argument('--d_model', type=int, default=128,
                         help='Transformer d_model shape')
-    parser.add_argument('--d_ff', type=int, default=2048,
+    parser.add_argument('--d_ff', type=int, default=1024,
                         help='Transformer d_ff shape')
     parser.add_argument('--dropout', type=float,
                         default=0.2, help='Dropout rate')
@@ -194,56 +194,39 @@ if __name__ == '__main__':
     dataset = params.dataset
 
     if dataset in {"assist2009"}:
-        params.batch_size = 48
         params.seqlen = 200
         params.data_dir = 'data/' + dataset
         params.data_name = dataset
         params.n_kc = 107
         params.n_q = 9798
-        params.min_len = 10
         params.rasch = 1
-        params.lr = 5e-4
-        params.d_ff = 1024
-        params.dropout = 0.2
+
 
     if dataset in {"assist2017"}:
-        params.batch_size = 64
         params.seqlen = 200
         params.data_dir = 'data/' + dataset
         params.data_name = dataset
         params.n_kc = 97
         params.n_q = 2521
-        params.min_len = 10
         params.rasch = 0
-        params.lr = 1e-3
-        params.d_ff = 2048
-        params.dropout = 0.3
+
 
     if dataset in {"assist2012"}:
-        params.batch_size = 48
         params.seqlen = 200
         params.data_dir = 'data/' + dataset
         params.data_name = dataset
         params.n_kc = 254
         params.n_q = 37438
-        params.min_len = 10
         params.rasch = 1
-        params.lr = 3e-4
-        params.d_ff = 1024
-        params.dropout = 0.2
+
 
     if dataset in {"eedi"}:
-        params.batch_size = 32
         params.seqlen = 200
         params.data_dir = 'data/' + dataset
         params.data_name = dataset
         params.n_kc = 52
         params.n_q = 915
-        params.min_len = 10
         params.rasch = 0
-        params.lr = 5e-4
-        params.d_ff = 2048
-        params.dropout = 0.2
 
     params.save = params.data_name
     params.load = params.data_name

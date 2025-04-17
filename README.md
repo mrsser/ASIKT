@@ -1,12 +1,12 @@
 # ASIKT
 code for paper: Interpretable Knowledge Tracing with Difficulty-Aware Attention  and Selective State Space Model
 ## Requirements
-python 3.9+
-torch 2.0.1
-numpy 1.26.0
-scikit-learn 1.5.2
-transformers
-einops
+python 3.9+  
+torch 2.0.1  
+numpy 1.26.0  
+scikit-learn 1.5.2  
+transformers  
+einops  
 ## Data Preparation
 ### Datasets
 The datasets can be downloaded from the links below:

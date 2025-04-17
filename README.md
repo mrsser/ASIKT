@@ -9,11 +9,11 @@ transformers
 einops  
 ## Data Preparation
 ### Datasets
-The datasets can be downloaded from the links below:
-ASSIST09: https://sites.google.com/site/assistmentsdata/home/2009-2010-assistment-data
-ASSIST12: https://sites.google.com/site/assistmentsdata/home/2012-13-school-data-withaffect
-ASSIST17: https://sites.google.com/view/assistmentsdatamining/dataset
-Eedi: https://eedi.com/projects/neurips-education-challenge
+The datasets can be downloaded from the links below:  
+ASSIST09: https://sites.google.com/site/assistmentsdata/home/2009-2010-assistment-data  
+ASSIST12: https://sites.google.com/site/assistmentsdata/home/2012-13-school-data-withaffect  
+ASSIST17: https://sites.google.com/view/assistmentsdatamining/dataset  
+Eedi: https://eedi.com/projects/neurips-education-challenge  
 
 ### Data Format
 For every 4 lines in 'dataset.csv', the format is as follows:

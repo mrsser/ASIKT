@@ -28,3 +28,7 @@ Put your data in `data/your_dataset_name` using the format shown above.
 
 ### Generate Exercise Weight Matrix
 Before training the model, split the dataset into training, validation, and testing sets. Then, run `data_pre.py` to generate the Exercise Weight Matrix for each set.
+
+## Running ASIKT
+An example command to train ASIKT on the ASSIST2009 dataset:
+`python main.py --dataset assist2009`

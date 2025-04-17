@@ -184,6 +184,8 @@ if __name__ == '__main__':
                         help='number of blocks')
     parser.add_argument('--n_head', type=int, default=8,
                         help='number of heads in multihead attention')
+    parser.add_argument('--rasch', type=int, default=1,
+                        help='whether to use Rasch embedding')
 
     # Datasets and Model
     parser.add_argument('--model', type=str, default='ASIKT',
